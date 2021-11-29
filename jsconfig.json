@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./src",
+      "paths": {
+        "@colors": ["./colors"],
+        "@components/*": ["./components/*"],
+        "@constants": ["./constants"],
+        "@hooks": ["./hooks"],
+        "@images": ["./images"],
+        "@layouts/*": ["./layouts/*"]
+      }
+    },
+    "exclude": ["node_modules"]
+}
