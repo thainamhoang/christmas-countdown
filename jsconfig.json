@@ -2,12 +2,14 @@
     "compilerOptions": {
       "baseUrl": "./src",
       "paths": {
+        "@audio/*": ["./audio/*"],
         "@colors": ["./colors"],
         "@components/*": ["./components/*"],
         "@constants": ["./constants"],
         "@hooks": ["./hooks"],
         "@images": ["./images"],
-        "@layouts/*": ["./layouts/*"]
+        "@layouts/*": ["./layouts/*"],
+        "@utils": ["./utils"]
       }
     },
     "exclude": ["node_modules"]

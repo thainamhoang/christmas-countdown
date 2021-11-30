@@ -14,12 +14,15 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "firebase": "^9.5.0",
+    "framer-motion": "^5.3.3",
+    "howler": "^2.2.3",
     "lodash": "^4.17.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-font-loader": "^2.0.0",
     "react-scripts": "4.0.3",
     "react-snowfall": "^1.1.1",
+    "react-sound": "^1.2.0",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -27,7 +30,8 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "craco eject",
-    "all": "rm -rf yarn.lock node_modules/ && yarn install && craco start"
+    "all": "rm -rf yarn.lock node_modules/ && yarn install && craco start",
+    "deploy": "yarn build && firebase deploy --only hosting:christmas-countdown"
   },
   "eslintConfig": {
     "extends": [

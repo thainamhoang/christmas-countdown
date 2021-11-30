@@ -39,12 +39,14 @@ module.exports = {
             alias: {
                 map: [
                     // And all your import aliases
+                    ['@audio/*', './src/audio/*'],
                     ['@colors', './src/colors'],
                     ['@components/*', './src/components/*'],
                     ['@constants', './src/constants'],
                     ['@hooks', './src/hooks'],
                     ['@images', './src/images'],
                     ['@layouts/*', './src/layouts/*'],
+                    ['@utils', './src/utils'],
                 ],
                 extensions: ['.ts', '.js', '.jsx', '.json'],
             },

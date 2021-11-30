@@ -76,10 +76,6 @@ const Countdown = ({ date }) => {
         return () => clearInterval(interval.current);
     }, []);
 
-    useEffect(() => {
-        console.log({ day, hour, minute, second });
-    }, [day, hour, minute, second]);
-
     const addLeadingZeros = (value) => {
         value = String(value);
         while (value.length < 2) {

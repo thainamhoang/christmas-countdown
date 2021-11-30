@@ -16,7 +16,7 @@ const useStyles = makeStyles({
         textAlign: 'center',
         justifyContent: 'center',
         marginTop: theme.spacing(5),
-        marginBottom: theme.spacing(2),
+        marginBottom: theme.spacing(1),
         cursor: 'pointer',
     },
     footer: {
@@ -25,7 +25,7 @@ const useStyles = makeStyles({
     line: {
         color: colors.green_dark,
         backgroundColor: colors.green_dark,
-        height: 1,
+        height: 0.5,
     },
 });
 
@@ -47,9 +47,11 @@ const Footer = () => {
                 className={classes.footer}
                 variant='button'
                 display='block'
-                gutterBottom
                 onClick={() =>
-                    window.open('https://github.com/thainamhoang', '_blank')
+                    window.open(
+                        'https://github.com/thainamhoang/christmas-countdown',
+                        '_blank'
+                    )
                 }
             >
                 {'🎄 Made by Thai-Nam Hoang, with love 🎄'}

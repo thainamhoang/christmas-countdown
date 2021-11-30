@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { CProvider } from '@components/Context';
+import FloatingButton from '@components/FloatingButton';
 
 import Snowfall from 'react-snowfall';
 
@@ -22,20 +23,23 @@ const App = () => {
 
     return (
         <CProvider value={{ contextValue, updateContextValue }}>
-            <div style={{ overflowX: 'hidden' }}>
-                <div
-                    className='root'
-                    style={{
-                        position: 'absolute',
-                        width: '100%',
-                        height: contextValue?.dHeight,
-                        // backgroundColor: colors.green_light,
-                    }}
-                >
-                    <Snowfall color={colors.white} snowflakeCount={500} />
+            <div style={{ display: 'flex', overflowX: 'hidden' }}>
+                <div>
+                    <div
+                        className='root'
+                        style={{
+                            position: 'absolute',
+                            width: '100%',
+                            height: contextValue?.dHeight,
+                            // backgroundColor: colors.green_light,
+                        }}
+                    >
+                        <Snowfall color={colors.white} snowflakeCount={500} />
+                    </div>
+                    <Header />
+                    <Footer />
                 </div>
-                <Header />
-                <Footer />
+                <FloatingButton />
             </div>
         </CProvider>
     );
