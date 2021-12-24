@@ -44,7 +44,7 @@ const Header = () => {
 
     const currentDate = new Date();
     const year =
-        currentDate.getMonth() === 11 && currentDate.getDate() > 23
+        currentDate.getMonth() === 12 && currentDate.getDate() > 25
             ? currentDate.getFullYear() + 1
             : currentDate.getFullYear();
 
