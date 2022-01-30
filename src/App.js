@@ -14,7 +14,7 @@ const App = () => {
     const [contextValue, setContextValue] = useState(DEFAULT_CONTEXT_VALUE);
 
     useEffect(() => {
-        console.log(contextValue);
+        // console.log(contextValue);
     }, [contextValue]);
 
     const updateContextValue = (newValue) => {
